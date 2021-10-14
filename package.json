@@ -1,0 +1,22 @@
+{
+    "name": "@ethernaut-challenges/monorepo",
+    "version": "0.0.1",
+    "repository": "git@github.com:The-Wary-One/challenges.git",
+    "author": "Wary <one.should.be.wary@gmail.com>",
+    "private": true,
+    "scripts": {
+        "chain": "yarn workspace @ethernaut-challenges/hardhat chain",
+        "test": "yarn workspace @ethernaut-challenges/hardhat test"
+    },
+    "workspaces": {
+        "packages": [
+            "packages/*"
+        ],
+        "nohoist": [
+            "**/hardhat",
+            "**/hardhat/**",
+            "**/hardhat-ts",
+            "**/hardhat-ts/**"
+        ]
+    }
+}
